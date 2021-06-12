@@ -1,0 +1,86 @@
+@import '../../../src/sass/variables';
+
+.MenuMovil{
+    width: 100%;
+    height: 80px;
+    background: $blanco;
+    box-shadow: 0 0 25px rgba( #07171b, .25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    .contenedor{
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .btn{
+            i{
+                font-size: 2rem;
+                color: $azul;
+            }
+        }
+    }
+}
+
+.blur{
+    width: 100%;
+    height: 100vh;
+    background: rgba( 0, 0, 0, .75);
+    backdrop-filter: blur(0px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1100;
+    transition: ease-in-out .25s;
+}
+.blur.activo{
+    background: rgba( 0, 0, 0, .75);
+    backdrop-filter: blur(6px);
+    pointer-events: all;
+}
+
+.enlacesMoviles{
+    position: fixed;
+    top: 0;
+    left: -75;
+    width: 75%;
+    height: 100vh;
+    background: $blanco;
+    z-index: 1200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    transition: ease-in-out .25s;
+    pointer-events: none;
+    a{
+        font-size: 1.5rem;
+        border-bottom: 45px;
+        padding: 1rem 2rem;
+        text-transform: uppercase;
+    }
+}
+
+.enlacesMoviles.activo{
+    left: 0;
+}
+
+@media screen and (min-width: 700px){
+    .enlacesMoviles{
+        width: 45%;
+        left: -45%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .MenuMovil{
+        display: none;
+    }
+    .blur{
+        display: none;
+    }
+    .enlacesMoviles{
+        display: none;
+    }
+}

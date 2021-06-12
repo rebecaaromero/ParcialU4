@@ -1,0 +1,56 @@
+@import '../../../src/sass/variables';
+
+.formulario{
+    max-width: 500px;
+    margin: auto;
+    background: $celeste;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    h3{
+        color: $gris;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 2rem;
+        input{
+            border-radius: 2rem;
+            border: $blanco;
+            color: $azul;
+            background-color: $blanco;
+            padding: 15px 32px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        textarea{
+            border-radius: 2rem;
+            border: $blanco;
+            color: $celeste;
+            background-color: $blanco;
+            padding: 15px 32px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .error{
+            margin-top: 2rem;
+            color: red;
+            margin-bottom: 2rem;
+            span{
+                font-weight: 700;
+                color: red;
+            }
+        }
+        button{
+            border-radius: 2rem;
+            border: $blanco;
+            color: $blanco;
+            background-color: $azul;
+            padding: 15px 32px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    }
+}

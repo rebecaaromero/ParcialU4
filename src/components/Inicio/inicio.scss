@@ -1,0 +1,128 @@
+@import '../../../src/sass/variables';
+
+.inicio{
+    background-color: $blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    .contenedor2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        .descripcion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            padding-bottom: 3rem;
+            padding-top: 5rem;
+            font-size: larger;
+            p{
+                font-size: larger;
+                color: $gris;
+                text-justify: center;
+            }
+        }
+        .destinos{
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            justify-content: center;
+            align-items: center;
+            .mexico{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 2rem;
+                img{
+                    width: 25vw;
+                    height: auto;
+                }
+                button{
+                    border-radius: 2rem;
+                    border: $blanco;
+                    color: $blanco;
+                    background-color: $azul;
+                    padding: 15px 32px;
+                    text-align: center;
+                    margin-top: 2rem;
+                }
+            }
+            .italia{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 2rem;
+                img{
+                    width: 25vw;
+                    height: auto;
+                }
+                button{
+                    border-radius: 2rem;
+                    border: $blanco;
+                    color: $blanco;
+                    background-color: $azul;
+                    padding: 15px 32px;
+                    text-align: center;
+                    margin-top: 2rem;
+                }
+            }
+            .maldivas{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 2rem;
+                img{
+                    width: 25vw;
+                    height: auto;
+                }
+                button{
+                    border-radius: 2rem;
+                    border: $blanco;
+                    color: $blanco;
+                    background-color: $azul;
+                    padding: 15px 32px;
+                    text-align: center;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){ 
+    .inicio{
+        .contenedor2{
+            .descripcion{
+                p{
+                    margin: auto;
+                    width: 500px;
+                }
+            }
+        }
+        .destinos{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 450px){ 
+    .inicio{
+        .contenedor2{
+            .descripcion{
+                p{
+                    margin: auto;
+                    width: 200px;
+                }
+        }  
+    }  
+} }

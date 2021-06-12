@@ -1,0 +1,68 @@
+@import '../../../src/sass/variables';
+
+.galeria {
+	display: flex;
+    align-content: center;
+    justify-content: center;
+	padding: 2px;
+	transition: .3s;
+	overflow: hidden;
+	&:hover &_imagen {
+		filter: grayscale(1);
+        overflow: hidden;
+	}
+	
+	&_columna {
+		display: flex;
+		flex-direction: column;
+		width: 25%;
+        overflow: hidden;
+	}
+	
+	&_link {
+		margin: 2px;
+		overflow: hidden;
+		
+		&:hover {
+			.galeria_imagen {
+				filter: grayscale(0);
+                overflow: hidden;
+			}
+			
+			.galeria_leyenda {
+				opacity: 1;
+                overflow: hidden;
+			}
+		}
+	}
+	
+	&_miniatura {
+		position: relative;
+        overflow: hidden;
+	}
+	
+	&_imagen {
+		display: block;
+        overflow: hidden;
+		width: 100%;
+		transition: .3s;
+		
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+	
+	&_leyenda {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: 25px 15px 15px;
+		width: 100%;
+		font-size: 16px;
+		color: white;
+        overflow: hidden;
+		opacity: 0;
+		background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
+		transition: .3s;
+	}
+}
